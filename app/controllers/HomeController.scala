@@ -19,15 +19,15 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
    * a path of `/`.
    */
   def index() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.index())
+    Ok("Welcome to AD API")
   }
-  
-  def explore() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.explore())
+
+  def version() = Action { implicit request: Request[AnyContent] =>
+    Ok(play.api.v)
   }
-  
-  def tutorial() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.tutorial())
+
+  def changeLog() = Action { implicit request: Request[AnyContent] =>
+    Ok("Hello World")
   }
-  
+
 }

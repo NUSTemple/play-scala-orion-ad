@@ -1,0 +1,14 @@
+package controllers
+
+/**
+ *
+ *
+ *
+ *
+ *
+ */
+
+
+class UserJobQueryController {
+
+}
